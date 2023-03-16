@@ -11,7 +11,7 @@ def main():
     Main file in driver script from which all code is run
     """
     # Determine whether to load precalculated data or calculate
-    load_precalculated = False
+    load_precalculated = True
     
     saved_df_path = os.path.join('data', 'processed', 'precalculated.tsv')
     if not load_precalculated:
@@ -29,7 +29,7 @@ def main():
     ## Plotting
     plot_stripplot(ov_df, 'group_label', 'richness_vdjgene', 
            'Number of Unique V, D, J-gene Combinations', 
-           'rich_vdjgene_violin.jpg')
+           'unique_vdj_genes.jpg')
     
 
 if __name__ == "__main__":
