@@ -42,15 +42,17 @@ From the data listed above, populate ./data/raw/ with the sequencing files for e
 	|__ tables/					
 	|__ supp_fig/				
 ```
-'src' contains all scripts for generating results, which include scripts for cleaning data (data/), scripts for analyzing this cleaned data (analysis/), scripts for visualizing results (visualization/), and commonly reused scripts and helper functions (util/). In the data/ folder in the parent directory, raw data are stored in raw/ which contains all ImmunoSEQ formatted repertoires. Processed datasets and any intermediates are stored in processed/, and preprocessed data that are directly used for plotting are stored in analysis/. Exploratory notebooks are stored in the notebook/ directory in the parent directory. In the fig/ directory, there are three subdirectories used to store main figures, tables, and supplemental figures. The figure I generated for pset 4 is in `./fig/main_fig/unique_vdjgenes.jpg`
-![Alt text](fig/main_fig/unique_vdj_genes.jpg?raw=true "Title")
+'src' contains all scripts for generating results, which include scripts for cleaning data (data/), scripts for analyzing this cleaned data (analysis/), scripts for visualizing results (visualization/), and commonly reused scripts and helper functions (util/). In the data/ folder in the parent directory, raw data are stored in raw/ which contains all ImmunoSEQ formatted repertoires. Processed datasets and any intermediates are stored in processed/, and preprocessed data that are directly used for plotting are stored in analysis/. Exploratory notebooks are stored in the notebook/ directory in the parent directory. In the fig/ directory, there are three subdirectories used to store main figures, tables, and supplemental figures.
 
 # Installation
 
-The driver file for the analysis in this pipeline is titled "driver.sh". The entire pipeline can be ran from `main.py`:
+The entire pipeline for analysis and visualization can be run from `main.py`:
 ```
 $ python main.py
 ```
+This will perform all calculations and save plots to the appropriate folders. For example, the figure I generated for pset 4 is in `./fig/main_fig/unique_vdjgenes.jpg`.
+![Alt text](fig/main_fig/unique_vdj_genes.jpg?raw=true "Title")
+
 Note that in the main function of main.py, there is a setting to toggle whether saved data generated previously (stored in `./data/processed/`) should be used to create plots, or whether data should be generated and saved from scratch. Toggle this by changing the `load_precalculated` variable.
 
 Python package dependencies can be found in "requirements.txt". To intialize a virtual enviroment with these dependencies:

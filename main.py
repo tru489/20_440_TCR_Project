@@ -11,7 +11,7 @@ def main():
     Main file in driver script from which all code is run
     """
     # Determine whether to load precalculated data or calculate
-    load_precalculated = True
+    load_precalculated = False
     
     saved_df_path = os.path.join('data', 'processed', 'precalculated.tsv')
     if not load_precalculated:
