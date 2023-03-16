@@ -2,7 +2,7 @@
 
 This repo contains  code used for analysis of TCRB sequencing data from patients with colorectal liver metastasis (CLM) treated with long or short doses of chemotherapy compared to non-treated patients [1]. The data are deposited on the immuneACCESS database at the following [link](https://clients.adaptivebiotech.com/pub/ad7a2d37-a0bc-4d88-813e-6dd7d762a65b) with DOI: 10.21417/EH2023GS. The goal of this project is to understand the role of chemotherapy in reshaping the adaptive immune response in cancer.
 
-This repo was created by Dennis Gong and Thomas Usherwood as part of the Biological Networks class at MIT (20.440). Please direct questions to dgong3@mit.edu and thomasu@mit.edu
+This repo was created by Dennis Gong and Thomas Usherwood as part of the Biological Networks class at MIT (20.440). Please direct questions to dgong3@mit.edu and thomasu@mit.edu.
 
 # Data
 
@@ -15,7 +15,7 @@ $ cd data/
 $ mkdir analysis
 $ mkdir processed
 $ mkdir raw
-$ cd ../../
+$ cd ../
 ```
 
 From the data listed above, populate ./data/raw/ with the sequencing files for each patient, and populate ./data/analysis with the sample overview file (both downloaded from the ImmunoSeq link above).
@@ -42,7 +42,7 @@ From the data listed above, populate ./data/raw/ with the sequencing files for e
 	|__ tables/					
 	|__ supp_fig/				
 ```
-'src' contains all scripts for generating results, which include scripts for cleaning data (data/), scripts for analyzing this cleaned data (analysis/), scripts for visualizing results (visualization/), and commonly reused scripts and helper functions (util/). In the data/ folder in the parent directory, raw data are stored in raw/ which contains all ImmunoSEQ formatted repertoires. Processed datasets and any intermediates are stored in processed/, and preprocessed data that are directly used for plotting are stored in analysis/. Exploratory notebooks are stored in the notebook/ directory in the parent directory. In the fig/ directory, there are three subdirectories used to store main figures, tables, and supplemental figures. The figure I generated for pset 4 is in `.fig/main_fig/unique_vdjgenes.jpg`
+'src' contains all scripts for generating results, which include scripts for cleaning data (data/), scripts for analyzing this cleaned data (analysis/), scripts for visualizing results (visualization/), and commonly reused scripts and helper functions (util/). In the data/ folder in the parent directory, raw data are stored in raw/ which contains all ImmunoSEQ formatted repertoires. Processed datasets and any intermediates are stored in processed/, and preprocessed data that are directly used for plotting are stored in analysis/. Exploratory notebooks are stored in the notebook/ directory in the parent directory. In the fig/ directory, there are three subdirectories used to store main figures, tables, and supplemental figures. The figure I generated for pset 4 is in `./fig/main_fig/unique_vdjgenes.jpg`
 
 # Installation
 
