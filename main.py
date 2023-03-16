@@ -7,6 +7,9 @@ from src.util.helper_functions import get_richness_vdj
 from src.visualization.generate_plots import plot_stripplot
 
 def main():
+    """
+    Main file in driver script from which all code is run
+    """
     # Determine whether to load precalculated data or calculate
     load_precalculated = False
     
@@ -30,4 +33,5 @@ def main():
     
 
 if __name__ == "__main__":
+    # Run main function when driver script is run in bash
     main()
